@@ -4,6 +4,6 @@ node {
         sh "terraform init"
     }
     stage("terraform Plan"){
-        sh "terraform destroy -auto-approve"
+        sh "terraform plan -auto-approve"
     }
 }
